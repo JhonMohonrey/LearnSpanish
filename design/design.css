@@ -1,0 +1,403 @@
+body {
+  margin: 0;
+  height: 3000px;
+  position: relative;
+  background-color: #ffe2a3;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+header .left_section {
+  padding: 20px 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+header .left_section h1 {
+  font-family: arial;
+  margin: 0;
+}
+
+header .left_section h1 .redLogoTest {
+  color: red;
+  margin-left: -2px;
+}
+
+header .left_section h2 {
+  font-family: arial;
+  font-size: 15px;
+  margin: 0;
+  font-weight: normal;
+}
+
+header .left_section h2 span {
+  opacity: .65;
+}
+
+header .right_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 15px;
+}
+
+header .right_section button {
+  padding: 10px;
+  border: none;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: #ffdd95;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+header .right_section button:active {
+  opacity: .8;
+}
+
+.scoreBoard {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.scoreBoard .title_correct_section {
+  background-color: lightgray;
+}
+
+.scoreBoard table {
+  border-collapse: collapse;
+  font-family: arial;
+  width: 80%;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.scoreBoard table th {
+  border-collapse: collapse;
+  padding: 10px 20px;
+}
+
+.container {
+  margin-top: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 25px;
+}
+
+.container .question_container {
+  border: 1px solid rgba(0, 0, 0, 0.603);
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  margin: 5px 0px;
+  background-color: white;
+  padding: 5px 10px;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.container .question_container .divForBtn {
+  padding: 10px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.container .question_container .divForBtn button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.container .question_container .divForBtn button:active {
+  opacity: .8;
+}
+
+.container .question_container .input_section_data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+  width: 96%;
+  margin-bottom: 10px;
+}
+
+.container .question_container .input_section_data input {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container .question_container h1 {
+  font-family: arial;
+  margin: 0;
+  font-size: 50px;
+  margin: 35px 0px;
+  word-wrap: break-word;
+}
+
+.container .question_container h3 {
+  font-family: arial;
+  margin: 0;
+}
+
+.container .question_container button {
+  background-color: yellow;
+}
+
+.add_container {
+  border: 1px solid black;
+}
+
+.add_container table {
+  border-collapse: collapse;
+}
+
+.add_container table .title_table {
+  background-color: #e6e6e6;
+}
+
+.add_container table .title_table th {
+  border: 1px solid black;
+  text-align: left;
+}
+
+.add_container table tr th {
+  border: 1px solid black;
+  text-align: left;
+}
+
+.add_section {
+  background-color: #ffe2a3;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.add_section .backBtn {
+  width: 100%;
+}
+
+.add_section #backToMain {
+  margin: 15px 10px;
+  padding: 10px 25px;
+  font-size: 18px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: white;
+}
+
+.add_section #backToMain:active {
+  opacity: .8;
+}
+
+.add_section #table_addSection {
+  border: 1px solid black;
+  -webkit-box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.514);
+          box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.514);
+  border-collapse: collapse;
+  width: 95%;
+  font-size: 25px;
+  font-family: arial;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.add_section #table_addSection .trTitle {
+  background-color: #bbbbbb;
+}
+
+.add_section #table_addSection p {
+  font-weight: normal;
+  margin: 0;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.add_section #table_addSection input {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  width: 95%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 20px;
+  background-color: white;
+  margin-bottom: 5px;
+}
+
+.add_section #table_addSection button {
+  padding: 8px 25px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffc954;
+  color: #634102;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add_section #table_addSection button:active {
+  opacity: .8;
+}
+
+.add_section #table_addSection th {
+  text-align: left;
+  padding: 5px;
+}
+
+.add_section #current_list_data {
+  border: 1px solid black;
+  border-collapse: collapse;
+  background-color: white;
+  width: 95%;
+  margin-top: 30px;
+  table-layout: fixed;
+  font-size: 25px;
+  font-family: arial;
+  -webkit-box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.514);
+          box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.514);
+}
+
+.add_section #current_list_data #list_data_question {
+  background-color: #c4c4c4;
+}
+
+.add_section #current_list_data #list_data_question th {
+  padding: 10px;
+  border: none;
+  font-weight: bold;
+}
+
+.add_section #current_list_data th {
+  font-weight: normal;
+  width: 100px;
+  word-wrap: break-word;
+  padding: 10px;
+  border: 1px solid black;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.add_section #current_list_data th button {
+  font-size: 20px;
+  padding: 5px 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffc954;
+  color: #634102;
+  cursor: pointer;
+}
+
+.add_section #current_list_data th button:active {
+  opacity: .8;
+}
+
+.hide_addSection {
+  background-color: dimgray;
+  position: fixed;
+  left: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+  #container h1 {
+    font-size: 35px;
+  }
+  #container h3 {
+    font-size: 18px;
+  }
+  #container input {
+    font-size: 18px;
+  }
+  #container button {
+    font-size: 20px;
+  }
+  #addSection .backBtn button {
+    font-size: 15px;
+  }
+  #addSection #table_addSection tr th {
+    font-size: 15px;
+  }
+  #addSection #table_addSection tr th p {
+    font-size: 15px;
+  }
+  #addSection #table_addSection tr th input {
+    font-size: 15px;
+  }
+  #addSection #table_addSection tr th button {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  #addSection #current_list_data {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=design.css.map */

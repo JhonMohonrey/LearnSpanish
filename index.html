@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Spanish</title>
+    <link rel="stylesheet" href="./design/design.css">
+    <script src="./script/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="left_section">
+            <h1>
+                Learn
+                <span class="redLogoTest">
+                    Spanish
+                </span>
+            </h1>
+            <h2>
+                Developer: <span>Mohonrey</span>
+            </h2>
+        </div>
+
+        <div class="right_section ">
+            <button id="addQ">Add Question</button>
+        </div>
+        
+    </header>
+
+    <div id="addSection" class="hide_addSection">
+        <!-- add_section -->
+        <!-- hide_addSection -->
+        <div class="backBtn">
+            <button id="backToMain">
+                Back
+            </button>
+        </div>
+        <table id="table_addSection">
+            <tr class="trTitle">
+                <th>English</th>
+                <th>Spanish</th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>
+                    <p>Question:</p>
+                    <input id="addQuestion" type="text" placeholder="Enter Question">
+                </th>
+                <th>
+                    <p>Answer:</p>
+                    <input id="addAnswer" type="text" placeholder="Enter Answer">
+                </th>
+                <th>
+                    <button id="pushNewData">add</button>
+                </th>
+            </tr>
+        </table>
+
+        <table id="current_list_data">
+            <tr id="list_data_question">
+                <th>Question</th>
+                <th>Answer</th>
+                <th></th>
+            </tr>
+            <!-- <tr>
+            </tr> -->
+        </table>
+    </div>
+
+    <div class="scoreBoard">
+        <table>
+            <tr class="title_correct_section">
+                <th>Correct</th>
+                <th>Mistake</th>
+                <th>Skipped</th>
+            </tr>
+            <tr>
+                <th id="thCorrect">0</th>
+                <th id="thMistake">0</th>
+                <th id="thSkipped">0</th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="container" class="container">
+        <!-- <h1>container</h1> -->
+    </div>
+</body>
+</html>
